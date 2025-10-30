@@ -50,13 +50,15 @@ DigitalWellbeing/
 ├── LICENSE                      # MIT License
 ├── DOCUMENTATION_INDEX.md       # This file
 ├── .gitignore                   # Git ignore rules
-└── DGWellbing/                  # Application source code
+└── DGWellbing/                  # Application source code (Note: directory name)
     ├── *.aspx                   # Web pages
     ├── *.aspx.cs               # Code-behind files
     ├── *.css                   # Stylesheets
     ├── Web.config              # Application configuration
     └── ...
 ```
+
+> **Note**: The application directory is named `DGWellbing/` (as it appears in the repository). This is the actual folder name where the source code resides.
 
 ## 🎯 Quick Links by Role
 
@@ -139,10 +141,10 @@ Found an error in the documentation? Have a suggestion for improvement?
 
 ## 🌟 Additional Resources
 
-- **Visual Studio Documentation**: https://docs.microsoft.com/en-us/visualstudio/
-- **ASP.NET Web Forms**: https://docs.microsoft.com/en-us/aspnet/web-forms/
-- **SQL Server LocalDB**: https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb
-- **C# Documentation**: https://docs.microsoft.com/en-us/dotnet/csharp/
+- **Visual Studio Documentation**: https://learn.microsoft.com/en-us/visualstudio/
+- **ASP.NET Web Forms**: https://learn.microsoft.com/en-us/aspnet/web-forms/
+- **SQL Server LocalDB**: https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb
+- **C# Documentation**: https://learn.microsoft.com/en-us/dotnet/csharp/
 
 ---
 
