@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="DGWellbing.Site1" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <title>Digital Wellbeing</title>
+    <link id="themeStylesheet" rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+       <asp:Panel ID="pnlMenu" runat="server">
+            <div class="navbar">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" Height="85px" Orientation="Horizontal" RenderingMode="Table" Width="100px">
+                    <Items>
+                        <asp:MenuItem Text="Dashboard" NavigateUrl="~/Dashboard.aspx" />
+                        <asp:MenuItem Text="Focus Mode" NavigateUrl="~/Focus.aspx" />
+                        <asp:MenuItem Text="Reminders" NavigateUrl="~/Reminders.aspx" />
+                        <asp:MenuItem Text="Settings" NavigateUrl="~/Settings.aspx" />
+                    </Items>
+                </asp:Menu>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
+        </asp:Panel>
+        <div class="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+
+        <footer>
+            <p>© 2025 Digital Wellbeing | All rights reserved.</p>
+        </footer>
+    </form>
+</body>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const themeToggle = document.getElementById("theme-toggle");
+        const themeStylesheet = document.getElementById("themeStylesheet");
+
+        if (localStorage.getItem("theme") === "dark") {
+            themeStylesheet.href = "dark-theme.css";
+        }
+
+        themeToggle.addEventListener("click", function () {
+            if (themeStylesheet.href.includes("styles.css")) {
+                themeStylesheet.href = "dark-theme.css";
+                localStorage.setItem("theme", "dark");
+            } else {
+                themeStylesheet.href = "styles.css";
+                localStorage.setItem("theme", "light");
+            }
+        });
+    });
+        </script>
+
+</html>
