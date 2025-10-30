@@ -1,0 +1,167 @@
+﻿/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #6C757D;
+    --background-color: #F8F9FA;
+    --text-color: #212529;
+    --border-color: #DEE2E6;
+    --button-hover: #0056b3;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Center Align Text */
+body, .container, .content {
+    text-align: center;
+}
+
+/* Add Border Around Content */
+.content {
+    max-width: 800px; /* Limit width for better readability */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid var(--border-color); /* Thin border */
+    border-radius: 8px;
+    background-color: white; /* Keep a contrast background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+    .btn-primary:hover {
+        background-color: var(--button-hover);
+    }
+
+/* Inputs */
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    margin-right: 0px;
+}
+
+/* Error Messages */
+.text-danger {
+    color: red;
+}
+
+/* Containers */
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* GridView Styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .table th, .table td {
+        padding: 10px;
+        border: 1px solid var(--border-color);
+    }
+
+/* Theme Toggle Button */
+#theme-toggle {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Menu Links */
+    .menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 10px 15px;
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+        border-radius: 5px;
+    }
+
+/* Hover Effect */
+.menu a:hover {
+      background-color: var(--button-hover);
+}
+
+/* Active Page */
+.menu .active {
+    background-color: var(--button-hover);
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+        .menu a {
+            display: block;
+            padding: 12px;
+        }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: var(--secondary-color);
+    color: white;
+    margin-top: 20px;
+}
+
+/* Center Login & Register Pages */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.auth-box {
+    width: 350px; /* Fixed width for consistency */
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
