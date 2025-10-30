@@ -35,6 +35,7 @@ nunit-*.xml
 !**/packages/build/
 *.nuget.props
 *.nuget.targets
+.nuget/
 
 # Visual Studio cache files
 *.cache
